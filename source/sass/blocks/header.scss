@@ -1,0 +1,87 @@
+.header {
+  min-height: 120px;
+  background-color: $color-rust;
+  padding-top: 12px;
+
+  @include vp-1439 {
+    padding-top: 19px;
+  }
+
+  @include vp-767 {
+    padding-top: 8px;
+    min-height: 76px;
+  }
+
+  @include vp-767 {
+    min-height: 78px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 56px;
+
+    @include vp-1439 {
+      padding: 0 30px;
+    }
+
+    @include vp-767 {
+      padding: 0 15px;
+    }
+  }
+
+  &__menu {
+    font-size: 15px;
+    line-height: 24px;
+    color: $color-default-white;
+    margin-top: 12px;
+    padding: 10px;
+    margin-left: -10px;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+
+    @include hover {
+      opacity: 0.5;
+    }
+
+    @include focus {
+      opacity: 0.5;
+    }
+  }
+}
+
+
+a.header__logo,
+span.header__logo {
+  color: $color-default-white;
+  margin-left: 62px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+
+  @include vp-1439 {
+    margin-left: 77px;
+
+    svg {
+      height: 58px;
+    }
+  }
+
+  @include vp-767 {
+    margin-left: 33px;
+
+    svg {
+      height: 47px;
+    }
+  }
+}
+
+a.header__logo {
+  @include hover {
+    opacity: 0.5;
+  }
+
+  @include focus {
+    opacity: 0.5;
+  }
+}

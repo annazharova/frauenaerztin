@@ -1,0 +1,206 @@
+/* colors: 
+
+  background: linear-gradient(rgb(194, 150, 164), rgb(112,40,64)); 
+  background-color: rgb(233, 233, 233);*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #464646;
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 1000px;
+
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: rgb(112,40,64);
+}
+
+a {
+  color: rgb(156, 98, 116);
+  display: inline-block;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+}
+
+nav a {
+
+  display: block;
+  /* height: 100%; */
+
+  padding: 20px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 auto;
+  /* padding: 20px 30px; */
+}
+
+.active {
+  background-color: rgb(240, 240, 240);
+  /* border: #d6494d solid 2px; */
+  border-radius: 5px;
+  /* padding: 20px 30px; */
+}
+
+.active a {
+  color: rgb(112,40,64);
+}
+
+.container {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.part {
+  width: 45%;
+}
+
+.part-left {
+  width: 40%;
+}
+
+.part-right {
+  width: 60%;
+}
+
+.team-list {
+
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.greet-list {
+  list-style: none;
+  display: contents;;
+  padding: 0;
+}
+
+footer ul {
+  background-color: rgb(230, 230, 230); 
+  border-radius: 4px;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 10px auto;
+}
+
+.time {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  width: 90%;
+  color:rgb(80, 80, 80);
+}
+
+.time th {
+  height: 40px;
+  /* background-color: rgb(184, 181, 181); */
+  background: linear-gradient(rgb(194, 150, 164), rgb(112,40,64));
+  /* border: 1px solid rgb(114, 116, 5); */
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.time td {
+  height: 40px;
+  background-color: rgb(233, 233, 233);
+  width: 20%;
+  border-radius: 3px;
+}
+
+.long-table {
+  width: 90%;
+}
+
+.long-table td {
+  height: 40px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 3px;
+
+  vertical-align: sub;
+  padding-left: 2%;
+}
+
+.long-table td:first-child {
+  text-align: left;
+  /* vertical-align: text-top; */
+  width: 20%;
+} 
+
+.long-table tr:hover {
+  color:rgb(0, 0, 0);
+}
+
+.long-text {
+  width: 70%;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: rgb(255, 255, 255);
+  color: rgb(156, 98, 116);
+  cursor: pointer;
+  /* padding: 18px; */
+  width: 100%;
+  border: none;
+  text-align: left;
+  /* outline: none; */
+  font-size: 16px;
+  text-decoration: underline;
+
+  padding: 0;
+  width: fit-content;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  /* background-color: rgb(117, 26, 26); */
+  border:#464646 1 solid;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+td ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+.visual-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+

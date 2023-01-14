@@ -1,0 +1,54 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Rouble";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/rouble.woff2") format("woff2"),
+//     url("../fonts/rouble.woff") format("woff");
+// }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Inter";
+
+  font-display: swap;
+  src:
+    url("../fonts/inter-regular.woff2") format("woff2"),
+    url("../fonts/inter-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Inter";
+
+  font-display: swap;
+  src:
+    url("../fonts/inter-bold.woff2") format("woff2"),
+    url("../fonts/inter-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Azeret Mono";
+
+  font-display: swap;
+  src:
+    url("../fonts/azeret-mono-regular.woff2") format("woff2"),
+    url("../fonts/azeret-mono-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Azeret Mono";
+
+  font-display: swap;
+  src:
+    url("../fonts/azeret-mono-bold.woff2") format("woff2"),
+    url("../fonts/azeret-mono-bold.woff") format("woff");
+}

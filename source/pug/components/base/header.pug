@@ -1,0 +1,41 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "Страница 2"
+      },
+      {
+        href: "#",
+        text: "Страница 3"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      a.header__menu(href="menu.html", aria-label="Переход к меню") Menu
+      if(currentUrl === "index.html")
+        //- lighthouse снимает 10 баллов SEO за <a> без href
+        span.header__logo
+          +icon("logo", 72, 72)
+      else
+        a.header__logo(href="index.html", aria-label="Переход на главную")
+          +icon("logo", 72, 72)
+      nav.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href="praxis.html", target="_blank") Praxis
+          li.navigation__item
+            a.navigation__link(href="leistungen.html", target="_blank") Leistungen
+          li.navigation__item
+            a.navigation__link(href="qualifikationen.html", target="_blank") Qualifikationen
+          li.navigation__item
+            a.navigation__link(href="pflichtangaben.html", target="_blank") Pflichtangaben
+          li.navigation__item
+            a.navigation__link(href="impressum.html", target="_blank") Impressum
+          li.navigation__item
+            a.navigation__link(href="datenschutz.html", target="_blank") Datenschutz

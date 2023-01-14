@@ -1,0 +1,15 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Frauenärztliche Praxis Larisa Anokhina" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "pflichtangaben.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    h1.visually-hidden Pflichtangaben für Ärzte mit eigener Homepage, entsprechend §&nbsp;6 Punkt&nbsp;5 des Teledienstgesetzes
+    +duty()

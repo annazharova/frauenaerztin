@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Frauenärztliche Praxis Larisa Anokhina</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav>
+        <ul>
+          <li><a class="menu" href="index.html">Home</a></li>
+          <li><a class="menu" href="praxis.html">Praxis</a></li>
+          <li class="active"><a class="menu">Leistungen</a></li>
+          <li><a class="menu" href="qualifikationen.html">Qualifikationen</a></li>
+          <li><a class="menu" href="pflichtangaben.html">Pflichtangaben</a></li>
+          <li><a class="menu" href="impressum.html">Impressum</a></li>
+          <li><a class="menu" href="datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="long-text">
+      <h1>Unsere Leistungen im Überblick</h1>
+      
+      
+        <ul>
+          <li><button type="button" class="collapsible">Ginäkologie</button>
+            <div class="content">
+            <section class="long-text">
+                <ul>
+                  <li>Krebsvorsorge</li>
+                  <li>Ultraschalluntersuchung der Gebärmutter / Eierstöcke</li>
+                  <li>Ultraschalluntersuchung der Brust</li>
+                  <li>Empfängnisverhütung (auch neue Methoden wie Kupferkette, Jaydess, Behandlung mit EllaOne)</li>
+                  <li>Beratung und Therapie bei Kinderwunsch (Künstliche Befruchtung mit dem Samen des Partners — Insemination)</li>
+                  <li>Nachsorge nach Karzinom einschließlich DMP</li>
+                  <li>Diagnostik und Behandlung von Hormonstörungen</li>
+                  <li>Kinder und Jugendsprechstunde</li>
+                  <li>Therapie von Wechseljahrbeschwerden</li>
+                  <li>Beratung und Therapie bei Blasenschwäche und Senkungsbeschwerden</li>
+                  <li>Psychosomatische Grundversorgung</li>
+                  <li>Impfberatung und Impfungen</li>
+                </ul>
+              </section>
+            </div></li>
+          <li><button type="button" class="collapsible">Schwangerschaft</button>
+            <div class="content">
+            <section class="long-text">
+                <ul>
+                  <li>Beratung und Betreuung von Schwangerschaften und Risiko-Schwangerschaften nach aktuellen, neuesten medizinischen Standards</li>
+                  <li>erweitertes Organscreening</li>
+                  <li>Doppler-Ultraschall</li>
+                  <li>Zusatzuntersuchungen auf Diabetes</li>
+                  <li>Ersttrimesterscreening (IGel)</li>
+                  <li>Überprüfung des Infektionsschutzes vor und während der Schwangerschaft (z.B. Röteln, Toxoplasmose, Streptokokken...)</li>
+                </ul>
+              </section>
+            </div></li>
+          <li><button type="button" class="collapsible">Individuelle Gesundheitsleistungen</button>
+            <div class="content">
+              <section class="long-text">
+                  <ul>
+                    <li>Krebsvorsorge Plus</li>
+                    <li>Ultraschalluntersuchung der Gebärmutter, Eierstöcke, Blase, intraabdominale Flüssigkeit</li>
+                    <li>Ultraschalluntersuchung der Brust und Achselhöhle</li>
+                    <li>Dünnschichtzytologie (verbesserter Zellabstrich)</li>
+                    <li>Screening auf Human-Papillome-Viren (HPV)</li>
+                    <li>Hormonbestimmungen im Klimakterium</li>
+                    <li>Überprüfung des Infektionsschutzes vor und während einer Schwangerschaft (z.B. Röteln, Toxoplasmose, Streptokokken...)</li>
+                    <li>Ultraschalluntersuchungen auf Wunsch der werdenden Eltern</li>
+                    <li>3D / 4D Ultraschall</li>
+                    <li>Ersttrimesterscreening (Nackentransparenz)</li>
+                  </ul>
+                </section>
+            </div></li>
+          <li>Jugendsprechstunde, mit  Vorsorge, Empfängnisverhütung und Sexualität , Pille danach</li>
+          <li>Allgemeine gynäkologische Sprechstunde (Familienplanung, Bauchschmerzen, Infektionen, Tumore)</li>
+          <li>Vorsorgesprechstunde (Krebsvorsorge)</li>
+          <li>Mutterschaftsvorsorge</li>
+          <li>Impfungen nach den Stiko Empfehlungen und darüber hinaus für Jugendliche und ältere Menschen</li>
+          <li>Babyfernsehen</li>
+          <li>Spezielle Diagnostik in der Frühschwangerschaft</li>
+          <li>Mammasonografie</li>
+          <li>Spezielle Diagnostik in der fortgeschrittenen Schwangerschaft, Organultraschall</li>
+          <li>Hormonsprechstunde</li>
+          <li>Risikoschwangerschaftsbetreuung</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <ul>
+        <li>Larisa Anokhina</li>
+        <li>Fachärztin für Frauenheilkunde und Geburtshilfe</li>
+        <li>Kriegsstrasse 216, 76135 Karlsruhe</li>
+        <li><a href="tel:+072147008137">Tel: 0721-4700 8137</a></li>
+      </ul>
+    </footer>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>
